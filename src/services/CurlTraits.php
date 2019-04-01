@@ -28,7 +28,7 @@ trait DataCurlGuzzleTrait
         $options                = [];
         $options['headers']     = [
             'Accept'        => 'application/json',
-            'Authorization' => 'Bearer ' . $_COOKIE['access_token'],
+            'Authorization' => 'Bearer ' . request()->header('Authorization'),
         ];
         $options['headers']     = !empty($headers) ? $headers : $options['headers'];
         $options['http_errors'] = false;

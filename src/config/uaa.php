@@ -32,7 +32,7 @@
     | username : xxx
     | password : xxx
     */
-    
+
     'account'   => [
         'auth' => [
             'username' => env('UAA_USERNAME'),
