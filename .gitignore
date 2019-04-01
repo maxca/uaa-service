@@ -1,0 +1,4 @@
+/vendor
+/public
+/test
+composer.lock

@@ -1,0 +1,23 @@
+version: '2.1'
+
+services:
+  app:
+    image: maxca789/apache-php72
+    container_name: uaa-service
+    restart: always
+    ports:
+      - "8818:80"
+    volumes:
+      - .:/var/www/html
+    mem_limit: 1024m
+    networks:
+      - network-horeca
+    cap_add:
+      - SYS_PTRACE
+
+networks:
+  network-horeca:
+    external: true
+
+
+
