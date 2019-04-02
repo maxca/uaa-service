@@ -15,6 +15,7 @@
         'user-groups'  => 'user-groups',
         'profile-info' => 'profile-info',
         'permissions'  => 'permissions',
+        'cache'        => 'cache',
     ],
 
     /*
