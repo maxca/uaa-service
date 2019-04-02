@@ -1,5 +1,5 @@
 {
-    "name": "samarkchaisanguan/uaa",
+    "name": "samarkchaisanguan/uaa-service",
     "description": "for user , role , permission, uaa with o2o project",
     "type": "library",
     "license": "MIT",
