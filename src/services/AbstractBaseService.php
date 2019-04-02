@@ -37,7 +37,7 @@ abstract class AbstractBaseService implements BaseServiceInterface
      */
     protected function getEndpoint()
     {
-        return config('uaa.endpoint.' . $this->configEndpoint);
+        return config(PACKAGE_NAME . '.endpoint.' . $this->configEndpoint);
     }
 
     /**

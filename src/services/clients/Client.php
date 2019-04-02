@@ -27,7 +27,7 @@ class Client extends BaseService implements ClientInterface
      */
     protected function getAccountBasicAuthenticate()
     {
-        return config('uaa.account');
+        return config(PACKAGE_NAME . '.account');
     }
 
     /**

@@ -29,7 +29,8 @@
         ],
         "psr-0": {
             "Samark\\UAA\\": "src/"
-        }
+        },
+        "files": ["constant.php"]
     },
     "extra": {
         "laravel": {
