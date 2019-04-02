@@ -37,7 +37,16 @@ abstract class AbstractBaseService implements BaseServiceInterface
      */
     protected function getEndpoint()
     {
-        return config(PACKAGE_NAME . '.endpoint.' . $this->configEndpoint);
+        return $this->getBaseEndpoint() . '/' .
+            config(PACKAGE_NAME . '.endpoint.' . $this->configEndpoint);
+    }
+
+    /**
+     * @return \Illuminate\Config\Repository|mixed
+     */
+    protected function getBaseEndpoint()
+    {
+        return config(PACKAGE_NAME . '.endpoint.base-url');
     }
 
     /**
