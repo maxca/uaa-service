@@ -24,7 +24,7 @@ class UaaServiceProvider extends PackageServiceProvider
      *
      * @var string
      */
-    protected $package = 'uaa';
+    protected $package = 'uaa-service';
 
     /* -----------------------------------------------------------------
      |  Main Methods
